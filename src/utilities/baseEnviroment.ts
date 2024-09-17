@@ -8,7 +8,7 @@ export let userDataProfile: PersonalProfile[] = [
     idUser: 1,
     document: "98673984",
     user: "sandra",
-    password: "12345",
+    password: "98673984",
     name: "Sandra",
     lastname: "Alfaro",
     phone: "N/A",
