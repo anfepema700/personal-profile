@@ -19,7 +19,10 @@ function FormLogin(): JSX.Element {
   const { handleSubmit } = useForm<AccountLogin>({ mode: "onChange" });
   const onSubmit: SubmitHandler<AccountLogin> = async (data: AccountLogin) => {
     const FindUserAndValidateAccess = userDataProfile.find((user) => {
-      return user.user === valueUser && user.password === valuePassword;
+      return (
+        user.user.toLowerCase() === valueUser.toLocaleLowerCase() &&
+        user.password === valuePassword
+      );
     });
     if (FindUserAndValidateAccess) {
       storeData("idUser", FindUserAndValidateAccess?.idUser);
