@@ -7,7 +7,7 @@ function Login(): JSX.Element {
   });
   return (
     <div className="grid background-image">
-      <div className="col-4 sm:col-8 form-login text-center">
+      <div className="col-12 sm:col-8 text-center bg-green-200">
         <h2>Acceso perfil personal</h2>
         <h5>Centro Espiritual Imandade Servos De Jesús</h5>
         <FormLogin />

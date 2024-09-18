@@ -21,19 +21,13 @@ function FormLogin(): JSX.Element {
     const FindUserAndValidateAccess = userDataProfile.find((user) => {
       return user.user === valueUser && user.password === valuePassword;
     });
-    console.log("validateAccess", validateAccess);
-
     if (FindUserAndValidateAccess) {
-      console.log("ingresar");
-
-      console.log("true");
       storeData("idUser", FindUserAndValidateAccess?.idUser);
       setValidateAccess(false);
       setValuePassword("");
       setValueUser("");
       navigate("/personal-profile");
     } else {
-      console.log("no ingresa");
       setValidateAccess(true);
     }
   };
@@ -48,6 +42,7 @@ function FormLogin(): JSX.Element {
           <InputText
             name="username"
             id="username"
+            autoFocus
             value={valueUser}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
               setValueUser(e.target.value);

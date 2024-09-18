@@ -17,3 +17,9 @@
   align-items: center;
   position: relative;
 }
+
+@media screen and (max-width: 575px) {
+  .background-image {
+    height: 110vh;
+  }
+}
