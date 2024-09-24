@@ -48,7 +48,7 @@ function PersonalProfile(): JSX.Element {
     }
   }, []);
   return (
-    <div className="grid ml-6 cardWithoutHeader">
+    <div className="grid ml-6">
       <h1 className="text-center col-12 md:col-8 sm:col-12">
         Centro Espiritual Imandade Servos De Jesús
       </h1>
