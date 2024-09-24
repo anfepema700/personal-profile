@@ -9,6 +9,7 @@ import PersonalProfile from "./pages/PersonalProfile/PersonalProfile";
 import "primeicons/primeicons.css";
 import "primereact/resources/themes/saga-purple/theme.css";
 import "/node_modules/primeflex/primeflex.css";
+import CardWithoutHeader from "./pages/PersonalProfile/CardWithoutHeader";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: "/personal-profile",
     element: <PersonalProfile />,
+  },
+
+  {
+    path: "/personal-profile-second",
+    element: <CardWithoutHeader />,
   },
 ]);
 root.render(

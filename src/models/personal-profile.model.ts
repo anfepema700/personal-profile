@@ -12,6 +12,7 @@ export interface PersonalProfile {
   state: boolean;
   bank?: string;
   accountBank?: string;
+  cardShow?: number;
 }
 export interface AccountLogin {
   user: string;
@@ -21,6 +22,7 @@ export interface Contributions {
   idUser: number;
   amount: number;
   date: string;
+  description: string;
 }
 export interface ResumeDataProfile extends PersonalProfile {
   totalAmount: number;

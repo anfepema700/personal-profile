@@ -29,7 +29,11 @@ function FormLogin(): JSX.Element {
       setValidateAccess(false);
       setValuePassword("");
       setValueUser("");
-      navigate("/personal-profile");
+      if (FindUserAndValidateAccess.cardShow === 1) {
+        navigate("/personal-profile");
+      } else if (FindUserAndValidateAccess.cardShow === 2) {
+        navigate("/personal-profile-second");
+      }
     } else {
       setValidateAccess(true);
     }

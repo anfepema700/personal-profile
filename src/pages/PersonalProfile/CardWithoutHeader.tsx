@@ -1,5 +1,3 @@
-import { Image } from "primereact/image";
-import logoServos from "../../assets/logo_servos.jpg";
 import { useEffect, useState } from "react";
 import {
   contributionsGenerated,
@@ -11,8 +9,8 @@ import {
 } from "../../models/personal-profile.model";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
-
-function PersonalProfile(): JSX.Element {
+import "./styles/catdWithOutHeader.css";
+function CardWithoutHeader(): JSX.Element {
   const idUser = localStorage.getItem("idUser");
   const [dataProfile, setDataProfile] = useState<ResumeDataProfile>();
   const [resumeContributions, setResumeContributions] = useState<
@@ -48,25 +46,9 @@ function PersonalProfile(): JSX.Element {
     }
   }, []);
   return (
-    <div className="grid ml-6 cardWithoutHeader">
-      <h1 className="text-center col-12 md:col-8 sm:col-12">
-        Centro Espiritual Imandade Servos De Jesús
-      </h1>
-      <div className="grid text-center">
-        <div className="col-6 ml-6">
-          <h2>Membresía VIP empleados</h2>
-          <p className="text-justify">
-            Este fondo se hizo con el fin de poder brindarle a nuestros Maestros
-            la posibilidad de generar ahorros significativos, los cuales pueden
-            ceder en cualquier momento a un familiar o a quien crean pertinente
-          </p>
-        </div>
-        <div className="col-3 ml-6">
-          <Image src={logoServos} alt="Image" width="150" />
-        </div>
-      </div>
+    <div className="grid cardWithoutHeader">
       <div className="col-12 grid">
-        <h2 className="ml-3 text-center col-6">Información personal</h2>
+        <h2 className="ml-3 text-center col-6">Resumen de cuenta</h2>
         <div className="col-6 ml-6 sm:col-12 grid">
           <div className="col">
             <p>
@@ -93,7 +75,7 @@ function PersonalProfile(): JSX.Element {
           </div>
         </div>
         <div className="col-8 md:col-6 sm:col-12 text-center ml-6">
-          <h2>Resumen de aportes: $ {dataProfile?.totalAmount}</h2>
+          <h2>Resumen de aportes: $ {dataProfile?.totalAmount} usd</h2>
           <DataTable
             value={resumeContributions}
             tableStyle={{ minWidth: "10rem" }}
@@ -113,4 +95,4 @@ function PersonalProfile(): JSX.Element {
   );
 }
 
-export default PersonalProfile;
+export default CardWithoutHeader;

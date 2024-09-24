@@ -18,6 +18,23 @@ export let userDataProfile: PersonalProfile[] = [
     address: "Calle 1 # 2-3",
     bank: "N/A",
     accountBank: "N/A",
+    cardShow: 1,
+  },
+  {
+    idUser: 2,
+    document: "123",
+    user: "luis",
+    password: "123",
+    name: "Luis",
+    lastname: "Vargas Bedoya",
+    phone: "N/A",
+    city: "Ayutla de los libres",
+    country: "Mexico",
+    state: true,
+    address: "C independencia sn loc el cortijo 39204",
+    bank: "N/A",
+    accountBank: "N/A",
+    cardShow: 2,
   },
 ];
 export let contributionsGenerated: Contributions[] = [
@@ -25,5 +42,18 @@ export let contributionsGenerated: Contributions[] = [
     idUser: 1,
     amount: 1000,
     date: "2024-09-17",
+    description: "Inversión inicial",
+  },
+  {
+    idUser: 1,
+    amount: 1000,
+    date: "2024-09-23",
+    description: "Aporte bono inversión inicial",
+  },
+  {
+    idUser: 2,
+    amount: 25100,
+    date: "2024-09-23",
+    description: "Depósito dirigido",
   },
 ];
