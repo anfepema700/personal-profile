@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logoBifinancing from "../../assets/logo_bifinancing.jpeg";
 import {
   contributionsGenerated,
   userDataProfile,
@@ -10,6 +11,7 @@ import {
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import "./styles/catdWithOutHeader.css";
+import { Image } from "primereact/image";
 function CardWithoutHeader(): JSX.Element {
   const idUser = localStorage.getItem("idUser");
   const [dataProfile, setDataProfile] = useState<ResumeDataProfile>();
@@ -46,11 +48,11 @@ function CardWithoutHeader(): JSX.Element {
     }
   }, []);
   return (
-    <div className="grid cardWithoutHeader">
-      <div className="col-12 grid">
-        <h2 className="ml-3 text-center col-6">Resumen de cuenta</h2>
-        <div className="col-6 ml-6 sm:col-12 grid">
-          <div className="col">
+    <div className="grid background-dark text-white">
+      <div className=" background-box grid">
+        <div className="grid">
+          <div className="col-8 md:col-8 sm:col-12 ml-3">
+            <h2>Resumen de cuenta</h2>
             <p>
               <strong>Propietario: </strong>
               {`${dataProfile?.name} ${dataProfile?.lastname}`}
@@ -73,8 +75,11 @@ function CardWithoutHeader(): JSX.Element {
               {dataProfile?.bank}
             </p>
           </div>
+          <div className="col-4 md:col-4 sm:col-12">
+            <Image src={logoBifinancing} alt="Image" width="150" />
+          </div>
         </div>
-        <div className="col-8 md:col-6 sm:col-12 text-center ml-6">
+        <div className="col-12">
           <h2>Resumen de aportes: $ {dataProfile?.totalAmount} usd</h2>
           <DataTable
             value={resumeContributions}

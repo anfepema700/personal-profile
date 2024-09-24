@@ -22,9 +22,9 @@ export let userDataProfile: PersonalProfile[] = [
   },
   {
     idUser: 2,
-    document: "123",
+    document: "1700581905",
     user: "luis",
-    password: "123",
+    password: "1700581905",
     name: "Luis",
     lastname: "Vargas Bedoya",
     phone: "N/A",
@@ -53,7 +53,7 @@ export let contributionsGenerated: Contributions[] = [
   {
     idUser: 2,
     amount: 25100,
-    date: "2024-09-23",
+    date: "2024-09-20",
     description: "Depósito dirigido",
   },
 ];

@@ -7,7 +7,8 @@ import Login from "./pages/Login/Login";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import PersonalProfile from "./pages/PersonalProfile/PersonalProfile";
 import "primeicons/primeicons.css";
-import "primereact/resources/themes/saga-purple/theme.css";
+// import "primereact/resources/themes/saga-purple/theme.css";
+import "primereact/resources/themes/vela-blue/theme.css";
 import "/node_modules/primeflex/primeflex.css";
 import CardWithoutHeader from "./pages/PersonalProfile/CardWithoutHeader";
 
@@ -21,15 +22,17 @@ const router = createBrowserRouter([
     element: <Login />,
     errorElement: <ErrorPage />,
   },
-
   {
     path: "/personal-profile",
     element: <PersonalProfile />,
   },
-
   {
     path: "/personal-profile-second",
     element: <CardWithoutHeader />,
+  },
+  {
+    path: "*",
+    element: <ErrorPage />,
   },
 ]);
 root.render(

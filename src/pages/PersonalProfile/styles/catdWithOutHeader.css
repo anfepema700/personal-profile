@@ -1,6 +1,20 @@
-.cardWithoutHeader {
-  background-color: antiquewhite;
+.background-dark {
+  background-color: #273851;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
 }
-* {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+@media screen and (max-width: 575px) {
+  .background-dark {
+    height: 110vh;
+  }
+}
+
+.background-box {
+  background-color: #1f2d40;
 }

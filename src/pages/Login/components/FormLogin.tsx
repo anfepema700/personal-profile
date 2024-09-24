@@ -77,7 +77,12 @@ function FormLogin(): JSX.Element {
         )}
       </div>
       <div className=" m-4 text-center">
-        <Button type="submit" label="ingresar" disabled={!activeButton} />
+        <Button
+          type="submit"
+          label="ingresar"
+          disabled={!activeButton}
+          className="text-white"
+        />
       </div>
     </form>
   );

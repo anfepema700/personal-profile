@@ -6,10 +6,9 @@ function Login(): JSX.Element {
     localStorage.clear();
   });
   return (
-    <div className="grid background-image">
-      <div className="col-12 sm:col-8 text-center bg-green-200">
+    <div className="grid background-image text-white">
+      <div className="col-12 sm:col-8 text-center bg-gray-600 ">
         <h2>Acceso perfil personal</h2>
-        <h5>Centro Espiritual Imandade Servos De Jesús</h5>
         <FormLogin />
       </div>
     </div>
