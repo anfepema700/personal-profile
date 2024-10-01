@@ -59,7 +59,7 @@ export let contributionsGenerated: Contributions[] = [
   {
     idUser: 1,
     amount: 1500,
-    date: "2024-09-23",
+    date: "2024-09-30",
     description: "Aporte",
   },
 ];
