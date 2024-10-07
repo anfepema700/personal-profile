@@ -39,33 +39,45 @@ export let userDataProfile: PersonalProfile[] = [
 ];
 export let contributionsGenerated: Contributions[] = [
   {
+    idContribution: 1,
     idUser: 1,
     amount: 1000,
     date: "2024-09-17",
     description: "Inversión inicial",
   },
   {
+    idContribution: 2,
     idUser: 1,
     amount: 1000,
     date: "2024-09-23",
     description: "Aporte bono inversión inicial",
   },
   {
+    idContribution: 3,
     idUser: 2,
     amount: 25100,
     date: "2024-09-20",
     description: "Depósito dirigido",
   },
   {
+    idContribution: 4,
     idUser: 1,
     amount: 1500,
     date: "2024-09-30",
     description: "Aporte",
   },
   {
+    idContribution: 5,
     idUser: 1,
     amount: 280,
     date: "2024-10-06",
     description: "Intereses del 8% sobre inversión",
+  },
+  {
+    idContribution: 6,
+    idUser: 1,
+    amount: 1500,
+    date: "2024-10-07",
+    description: "Aporte Inversión",
   },
 ];

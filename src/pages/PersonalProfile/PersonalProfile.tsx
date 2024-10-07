@@ -12,6 +12,7 @@ import {
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import "./styles/catdWithOutHeader.css";
+import { personalProfileAdapter } from "./adapters/personalProfile.adapter";
 function PersonalProfile(): JSX.Element {
   const idUser = localStorage.getItem("idUser");
   const [dataProfile, setDataProfile] = useState<ResumeDataProfile>();
@@ -97,7 +98,7 @@ function PersonalProfile(): JSX.Element {
           <div className="col-8 md:col-6 sm:col-12 text-center ml-6">
             <h2>Resumen de aportes: $ {dataProfile?.totalAmount}</h2>
             <DataTable
-              value={resumeContributions}
+              value={personalProfileAdapter(resumeContributions)}
               tableStyle={{ minWidth: "10rem" }}
               rowsPerPageOptions={
                 resumeContributions.length > 5 ? [5, 10, 20] : []

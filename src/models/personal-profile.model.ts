@@ -19,6 +19,7 @@ export interface AccountLogin {
   password: string;
 }
 export interface Contributions {
+  idContribution: number;
   idUser: number;
   amount: number;
   date: string;
