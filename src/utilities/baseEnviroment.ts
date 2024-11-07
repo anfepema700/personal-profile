@@ -47,7 +47,8 @@ export let userDataProfile: PersonalProfile[] = [
     city: "N/A",
     country: "N/A",
     state: true,
-    address: "N/A",
+    address: `1308 Bailey ave
+Chattanooga , TN 37411`,
     bank: "N/A",
     accountBank: "N/A",
     cardShow: 2,
