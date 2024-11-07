@@ -36,6 +36,22 @@ export let userDataProfile: PersonalProfile[] = [
     accountBank: "N/A",
     cardShow: 2,
   },
+  {
+    idUser: 3,
+    document: "C02397810",
+    user: "teresa",
+    password: "2397810",
+    name: "Teresa",
+    lastname: "Galeano Blandon",
+    phone: "N/A",
+    city: "N/A",
+    country: "N/A",
+    state: true,
+    address: "N/A",
+    bank: "N/A",
+    accountBank: "N/A",
+    cardShow: 2,
+  },
 ];
 export let contributionsGenerated: Contributions[] = [
   {
@@ -100,5 +116,12 @@ export let contributionsGenerated: Contributions[] = [
     amount: 1000,
     date: "2024-11-04",
     description: "Aporte Inversión",
+  },
+  {
+    idContribution: 10,
+    idUser: 3,
+    amount: 77000,
+    date: "2024-11-07",
+    description: "Inversión inicial",
   },
 ];
