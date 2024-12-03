@@ -6,7 +6,7 @@ import {
 export let userDataProfile: PersonalProfile[] = [
   {
     idUser: 1,
-    document: "98673984",
+    document: " ",
     user: "sandra",
     password: "98673984",
     name: "Sandra",
@@ -157,7 +157,7 @@ export let contributionsGenerated: Contributions[] = [
     idContribution: 15,
     idUser: 1,
     amount: 400,
-    date: "2024-11-23",
+    date: "2024-11-30",
     description: "Intereses",
   },
 ];
