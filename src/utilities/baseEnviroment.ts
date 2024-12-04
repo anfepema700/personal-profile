@@ -160,4 +160,18 @@ export let contributionsGenerated: Contributions[] = [
     date: "2024-11-30",
     description: "Intereses",
   },
+  {
+    idContribution: 16,
+    idUser: 1,
+    amount: -4500,
+    date: "2024-12-04",
+    description: "Transferencia bancaria",
+  },
+  {
+    idContribution: 17,
+    idUser: 1,
+    amount: -5560,
+    date: "2024-12-04",
+    description: "Retiro por incumplimiento de términos",
+  },
 ];
