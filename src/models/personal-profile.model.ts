@@ -13,6 +13,12 @@ export interface PersonalProfile {
   bank?: string;
   accountBank?: string;
   cardShow?: number;
+  transferred?: string;
+  idTransferred?: string;
+  addressTransferred?: string;
+  accountTransferred?: string;
+  bankTransferred?: string;
+  totalAmountTransferred?: number;
 }
 export interface AccountLogin {
   user: string;

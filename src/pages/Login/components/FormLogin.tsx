@@ -33,6 +33,8 @@ function FormLogin(): JSX.Element {
         navigate("/personal-profile");
       } else if (FindUserAndValidateAccess.cardShow === 2) {
         navigate("/personal-profile-second");
+      } else if (FindUserAndValidateAccess.cardShow === 3) {
+        navigate("/personal-profile-third");
       }
     } else {
       setValidateAccess(true);

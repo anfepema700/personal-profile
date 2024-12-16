@@ -11,6 +11,7 @@ import "primeicons/primeicons.css";
 import "primereact/resources/themes/vela-blue/theme.css";
 import "/node_modules/primeflex/primeflex.css";
 import CardWithoutHeader from "./pages/PersonalProfile/CardWithoutHeader";
+import CardTransferred from "./pages/PersonalProfile/CardTransferred";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/personal-profile-second",
     element: <CardWithoutHeader />,
+  },
+  {
+    path: "/personal-profile-third",
+    element: <CardTransferred />,
   },
   {
     path: "*",
