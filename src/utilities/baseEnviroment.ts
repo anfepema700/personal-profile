@@ -73,7 +73,7 @@ Chattanooga , TN 37411`,
     addressTransferred: "",
     accountTransferred: "",
     bankTransferred: "",
-    totalAmountTransferred: 27800,
+    totalAmountTransferred: 30000,
   },
 ];
 export let contributionsGenerated: Contributions[] = [
