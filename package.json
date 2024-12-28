@@ -26,11 +26,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-      "dev": "vite",
-      "build:prod": "tsc && vite build --base=/reportes-mda",
-      "preview": "vite preview",
-      "format": "prettier --write .",
-      "lint": "npx eslint --fix . --ext .ts,.tsx"    
+    "dev": "vite",
+    "build:prod": "tsc && vite build --base=/reportes-mda",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "lint": "npx eslint --fix . --ext .ts,.tsx"
   },
   "eslintConfig": {
     "extends": [
