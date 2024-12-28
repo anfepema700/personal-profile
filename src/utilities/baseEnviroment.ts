@@ -291,7 +291,7 @@ export let contributionsGenerated: Contributions[] = [
   {
     idContribution: 18,
     idUser: 4,
-    amount: 9623,
+    amount: 9633,
     date: "2024-12-27",
     description: "Transferencia recibida",
   },
